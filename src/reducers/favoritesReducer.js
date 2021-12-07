@@ -2,10 +2,10 @@ import { TOGGLE_FAVORITES, ADD_FAVORITE, REMOVE_FAVORITE}  from './../actions/fa
 
 const initialState = {
     favorites: [],
-    displayFavorites: true
+    displayFavorites: false
 }
 
-const favoritesReducer = (state = initialState, action)=> {
+const reducers = (state = initialState, action)=> {
     switch(action.type) {
         case(TOGGLE_FAVORITES): {
             return {
@@ -30,4 +30,4 @@ const favoritesReducer = (state = initialState, action)=> {
     }
 }
 
-export default favoritesReducer;
+export default reducers;
